@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Introduction to R Package"
+title:  "Introduction to Developing an R Package"
 date:   2018-01-06
-excerpt: "How to distribute our code as R package"
+excerpt: "As a data scientist, we might have solved a problem and want to distribute our solution so that everyone else can use it. In this post, we will cover the basics about R package."
 image: "/images/Rlogo.png"
 author: [Shivayogi Biradar, Bagus Trihatmaja]
 ---
@@ -150,7 +150,7 @@ test_that("prepareCompanyInfo must return at least one value", {
 `TestThat` has a convention on how we should name the test files. Inside test folder, there will be another folder for testthat. Inside the testthat folder, we should name our file according to the file name in R folder.
 For example, if the filename in our R folder is `companies.R` then we have to name our test file as `test-companies.R`. This way `testthat` will know which R file does the test belong to.
 
-# Build the package
+## Build the package
 
 To build the package, we can use devtools command.
 
@@ -165,7 +165,7 @@ devtools::build()
 
 To take a source package as an input.
 
-# Test the package
+## Test the package
 
 If we want to submit our package to CRAN or bioconductor, we have to make sure all the tests are passed without errors, warnings, or notes.
 
@@ -175,7 +175,7 @@ To check the package, we can use:
 devtools::check()
 ```
 
-# Install the package
+## Install the package
 
 To install our package, we can use:
 
