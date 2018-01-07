@@ -35,10 +35,7 @@ disqus_shortname:   default
 
 # Social
 analytics-id:       "default"
-twitter:            default
-facebook:           default
-instagram:          default
-github:             default
+github:             ml-yogi
 
 # personal
 location:           Los Angeles, CA
