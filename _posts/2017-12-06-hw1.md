@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Analysis Of Discrimination In US Schools"
+date:   2018-12-06
+excerpt: "The Office for Civil Rights (OCR) collected data about key education and civil rights issues for the 2013-14 school year from virtually every public school in the country through the Civil Rights Data Collection (CRDC).We examine this dataset and analyze potential discrimination in schools based on race and ethnicity.
+"
+image: "/images/racial.jpg"
+---
+
+## Investigations
+Lets investigate  whether Black students receive a disproportionate number of in-school suspensions.
+
+![proportion]({{ "/images/propblack.jpeg" | absolute_url }})
+The reference line indicates an ideal scenario where proportion of black students would be same as proportion of students receiving in class suspensions.
+
+But the blue line represents the actual scenario where we can clear observe an over representation of black students in in-school suspensions.
+
+
+Lets investigate whether disabled students are more often disciplined with corporal punishment.
+
+
+
+![proportion]({{ "/images/propblack.jpeg" | absolute_url }})
+
+The fitted smooth line suggests that, until the schools reach roughly 25% disabled students, disabled students are over-represented among students who are disciplined with corporal punishment. This is indicated by the proportion of disciplined students who are disabled typically being greater than the proportion of disabled students at the school for `pr_dis < 0.25`. However, this relationship drops off as the proportion of disabled students at the school increases afer this point, suggesting under-representation for schools where `pr_dis > .25`. But the second claim should be carefully observed, as we have much less data points where `pr_dis > 0.25`.
+
+
+Lets investigate whether Black and Hispanic students are over- or under-represented in Gifted \& Talented programs.
+![proportion]({{ "/images/Blacksnhispanicsgt.png" | absolute_url }})
+
+
+
+
+
+The fitted smooth lines shows that the proportion of Gifted \& Talented students who are Black and Hispanic is typically lower than the proportion of Black and Hispanic students at each school. This indicates an under-representation of Black and Hispanic students in Gifted \& Talented programs.
+
+
+ Let us observe chronic student absenteeism in the blacks and hispanics demographics
+
+ ![proportion]({{ "/images/Self.png" | absolute_url }})
+
+ The association  is almost linear hence we cannot say prop of blacks and hispanics are over or underrepresented in the category of chronic student absenteeism .Their may be other factors that affect chronic student absenteeism than demography of blacks and hispanics.
+
+ we would like to investigate whether White students did more bullying or harassment (based on race, sex or disability)
+
+
+ ![proportion]({{ "/images/number10.png" | absolute_url }})
+
+ We can see there is a relation between those two variables. This plot shows slightly under-representation of the proportion of white students among those white students who were disciplined because the blue line is under the identity line (red line).
